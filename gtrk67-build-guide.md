@@ -123,7 +123,7 @@
 
 ### トラックボールケースにボールを入れる
 
-* ボールを押し込んでください
+* ボールをケースに押し込んでください
 
 ### キーキャップを取り付ける
 
@@ -131,7 +131,38 @@
 
 ### Vialでキーマップを変更する
 
-* 左手トラックボールで組み立てた場合、レイアウトを変更してください
+* ChromeまたはEdgeで[Vial](https://vial.rocks/)にアクセスし、Start VialボタンをクリックしてGTRK67に接続してください
+    * 左手トラックボールで組み立てた場合はレイアウトを変更します
+        ![](img/vial-layout.png)
+* 日本語キーボード用の印字に合わせるには`Keyboard layout`から`Japanese`を選択します
+    ![](img/vial-japanese.png)
+* キーマップの設定の詳細についてはQMKやBLE Micro Proのドキュメントを参照してください
+
+|機能|ラベル|タブ|
+|-|-|-|
+|左クリック|Mouse 1|App, Media and Mouse|
+|右クリック|Mouse 2|App, Media and Mouse|
+|中クリック|Mouse 3|App, Media and Mouse|
+|無線接続に切り替え|SEL BLE|User|
+|有線接続に切り替え|SEL USB|User|
+|ペアリング済みデバイスに無線接続|ADV IDn|User|
+|新しいデバイスとペアリング|ADV W/O L|User|
+|英語キーボードを日本語OSで動作させるためのオーバーライドを設定する|UJ OVR|User|
+|日本語キーボードを英語OSで動作させるためのオーバーライドを設定する|JU OVR|User|
+|上記オーバーライドを無効化|D OVR|User|
+
+### 有線接続で動作確認する
+
+### (無線接続する場合)接続デバイスとペアリングする
+
+* `ADV W/O L`に設定したキーを押す
+* 接続したいデバイスの設定を開き、ペアリングを実行する
+* すでに他のデバイスとペアリング済みの場合、それらのデバイスのBluetoothを無効化にしておく必要があります
+
+## ファームウェアをビルドする
+
+* ソースコード: [https://github.com/sekigon-gonnoc/vial-qmk/tree/dev/ble-micro-pro/keyboards/sekigon/gtrk67](https://github.com/sekigon-gonnoc/vial-qmk/tree/dev/ble-micro-pro/keyboards/sekigon/gtrk67)
+* [書き込み手順](https://sekigon-gonnoc.github.io/BLE-Micro-Pro/#/build_firmware?id=%e7%94%9f%e6%88%90%e3%81%97%e3%81%9f%e3%83%95%e3%82%a1%e3%83%bc%e3%83%a0%e3%82%a6%e3%82%a7%e3%82%a2%e3%82%92%e6%9b%b8%e3%81%8d%e8%be%bc%e3%82%80)
 
 ## トラブルと対策
 
